@@ -13,14 +13,14 @@ public class MediaTest {
     }
 
     @Test
-    public void testeMedianaVetor() {
+    public void testeMedianaVetor() throws Exception {
         double[] numeros = {1, 2, 3, 4, 5};
         Mediana m = new Mediana();
         double res = m.getMediana(numeros);
         assertEquals(3, res, 0.1);
     }
     @Test (expected = Exception.class)
-    public void testeNulo() {
+    public void testeNulo() throws Exception {
         double[] numeros = null;
         Mediana m = new Mediana();
         double res = m.getMediana(numeros);
