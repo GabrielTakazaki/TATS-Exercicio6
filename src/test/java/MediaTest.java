@@ -19,4 +19,11 @@ public class MediaTest {
         double res = m.getMediana(numeros);
         assertEquals(3, res, 0.1);
     }
+    @Test (expected = Exception.class)
+    public void testeNulo() {
+        double[] numeros = null;
+        Mediana m = new Mediana();
+        double res = m.getMediana(numeros);
+        
+    }
 }
