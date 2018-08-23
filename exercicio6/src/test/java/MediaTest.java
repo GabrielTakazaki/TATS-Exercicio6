@@ -32,7 +32,7 @@ public class MediaTest {
         double[] numeros = {1, 2, 3, 4, 5};
         Mediana m = new Mediana();
         double res = m.getMediana(numeros);
-        assertEquals(4, res, 0.1);
+        assertEquals(2, res, 0.1);
                
     }
 }
