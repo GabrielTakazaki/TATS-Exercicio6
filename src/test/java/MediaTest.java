@@ -67,9 +67,36 @@ public class MediaTest {
         assertEquals(2, res, 0.1);
     }
     
+    @Test
+    public void testeDesvioPadrao() throws Exception {
+        double[] numeros = {1, 4, 3, 6, 5};
+        double res = m.getDesvioPadrao(numeros);
+        assertEquals(1.92354, res, 0.1);
+    }
+    
+    @Test
+    public void testeQntMaioresNumeros() throws Exception {
+        double[] numeros = {1, 4, 3, 6, 6};
+        double res = m.getQntMaioresNumeros(numeros);
+        assertEquals(2, res, 0.1);
+    }
+    
+    @Test
+    public void testeQntMenoresNumeros() throws Exception {
+        double[] numeros = {1, 1, 1, 6, 6};
+        double res = m.getQntMenoresNumeros(numeros);
+        assertEquals(3, res, 0.1);
+    }
+    
+    @Test(expected = Exception.class)
+    public void testeVazio() throws Exception {
+        double[] numeros = {};
+        m.verificVetor(numeros);
+    }
+    
     @Test(expected = Exception.class)
     public void testeNulo() throws Exception {
         double[] numeros = null;
-        double res = m.getMediana(numeros);
+        m.verificVetor(numeros);      
     }
 }
