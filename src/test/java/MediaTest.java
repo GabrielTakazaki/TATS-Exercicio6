@@ -92,11 +92,13 @@ public class MediaTest {
     public void testeVazio() throws Exception {
         double[] numeros = {};
         m.verificVetor(numeros);
+        fail();
     }
     
     @Test(expected = Exception.class)
     public void testeNulo() throws Exception {
         double[] numeros = null;
-        m.verificVetor(numeros);      
+        m.verificVetor(numeros);
+        fail();
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="MediaTest" time="0.251" errors="0" skipped="0">
+<testsuite tests="13" failures="0" name="MediaTest" time="0.359" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin"/>
@@ -62,16 +62,16 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="MediaTest" name="testeMedia" time="0.089"/>
+  <testcase classname="MediaTest" name="testeMedia" time="0.114"/>
   <testcase classname="MediaTest" name="testeVazio" time="0"/>
-  <testcase classname="MediaTest" name="testeMenorValor" time="0"/>
+  <testcase classname="MediaTest" name="testeMenorValor" time="0.001"/>
   <testcase classname="MediaTest" name="testeNumeroAcimaMedia" time="0"/>
   <testcase classname="MediaTest" name="testeQntMenoresNumeros" time="0.001"/>
   <testcase classname="MediaTest" name="testeNulo" time="0"/>
   <testcase classname="MediaTest" name="testeQntMaioresNumeros" time="0"/>
   <testcase classname="MediaTest" name="testeNumeroAbaixoMedia" time="0"/>
   <testcase classname="MediaTest" name="testeMedianaPar" time="0"/>
-  <testcase classname="MediaTest" name="testeMedianaDesordenado" time="0"/>
+  <testcase classname="MediaTest" name="testeMedianaDesordenado" time="0.001"/>
   <testcase classname="MediaTest" name="testeMaiorValor" time="0"/>
   <testcase classname="MediaTest" name="testeDesvioPadrao" time="0"/>
   <testcase classname="MediaTest" name="testeMedianaVetor" time="0"/>
